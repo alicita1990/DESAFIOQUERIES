@@ -1,0 +1,150 @@
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  background-color: #698f3f;
+  height: 40px;
+  padding: 10px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #fbfaf8;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+li {
+  list-style: none;
+  text-align: start;
+  margin-left: 5px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+ul {
+  padding: 1rem;
+}
+
+main {
+  grid-area: main;
+  background-color: #e7decd;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #698f3f;
+  height: 40px;
+  text-align: center;
+  padding: 20px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+button {
+  background-color: #804e49;
+  color: #fbfaf8;
+  border-radius: 15px;
+  height: 30px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a122a;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 20px;
+  color: #fbfaf8;
+}
+
+p {
+  margin-left: 40px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+}
+
+h6 {
+  margin-top: 3px;
+  margin-left: 65px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+}
+i {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.container-cards {
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "nav main"
+      "footer footer";
+  }
+
+  .container-cards {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
